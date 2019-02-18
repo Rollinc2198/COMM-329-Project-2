@@ -23,6 +23,12 @@ body {
         "body2"
         "image3"
         "body3"
+        "image4"
+        "body4"
+        "image5"
+        "body5"
+        "image6"
+        "body6"
         "footer"
 }
 .item {
@@ -51,8 +57,34 @@ nav a:hover  {
   margin: 0;
   padding-left: 0;
   padding-right: 0;
+  padding-bottom: 0;
 }
 .expo img {
+  width: 100%;
+  height: auto;
+}
+.title {
+  background: url("../assets/owbanner.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: var(--primary);
+  font-size: 11vw;
+  line-height: 23vw;
+  text-align: center;
+  color: var(--accentl);
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: var(--primary);
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+  height: auto;
+  font-family: "Lucida Console";
+}
+.title img {
   width: 100%;
   height: auto;
 }
@@ -67,6 +99,7 @@ nav a:hover  {
   display: flex;
   justify-content: center;
   grid-area: image1;
+  height: auto;
 }
 .body1 {
   grid-area: body1;
@@ -76,6 +109,7 @@ nav a:hover  {
   display: flex;
   justify-content: center;
   grid-area: image2;
+  max-height: 350px;
 }
 .body2 {
   grid-area: body2;
@@ -85,9 +119,40 @@ nav a:hover  {
   display: flex;
   justify-content: center;
   grid-area: image3;
+  height: 350px;
 }
 .body3 {
   grid-area: body3;
+}
+.image4 {
+  background-image: linear-gradient(var(--accentd), var(--accentl), var(--background));
+  display: flex;
+  justify-content: center;
+  grid-area: image4;
+  height: 350px;
+}
+.body4 {
+  grid-area: body4;
+}
+.image5 {
+  background-image: linear-gradient(var(--accentd), var(--accentl), var(--background));
+  display: flex;
+  justify-content: center;
+  grid-area: image5;
+  height: 350px;
+}
+.body5 {
+  grid-area: body5;
+}
+.image6 {
+  background-image: linear-gradient(var(--accentd), var(--accentl), var(--background));
+  display: flex;
+  justify-content: center;
+  grid-area: image6;
+  height: 350px;
+}
+.body6 {
+  grid-area: body6;
 }
 .footer {
   justify-self: center;
@@ -95,6 +160,9 @@ nav a:hover  {
 }
 
 @media screen and (min-width: 556px) {
+  .title {
+    font-size: 8.1vw;
+  }
   #banner3 {
     display: none;
   }
@@ -103,6 +171,9 @@ nav a:hover  {
   }
 }
 @media screen and (min-width: 768px) {
+  .title {
+    font-size: 5.6vw;
+  }
   #banner2 {
     display: none;
   }
@@ -120,11 +191,39 @@ nav a:hover  {
     background-image: linear-gradient(to right, var(--background), var(--accentl), var(--accentd));
   }
   .body2 {
-    justify-self: right;
-    grid-area: body2;
+    text-align: right;
+    border-bottom-style: solid;
+    border-bottom-color: var(--accent);
   }
   .image3 {
     background-image: linear-gradient(to right, var(--accentd), var(--accentl), var(--background));
+  }
+  .body3 {
+    border-bottom-style: solid;
+    border-bottom-color: var(--accent);
+  }
+  .image4 {
+    background-image: linear-gradient(to right, var(--background), var(--accentl), var(--accentd));
+  }
+  .body4 {
+    text-align: right;
+    border-bottom-style: solid;
+    border-bottom-color: var(--accent);
+  }
+  .image5 {
+    background-image: linear-gradient(to right, var(--accentd), var(--accentl), var(--background));
+  }
+  .body5 {
+    border-bottom-style: solid;
+    border-bottom-color: var(--accent);
+  }
+  .image6 {
+    background-image: linear-gradient(to right, var(--background), var(--accentl), var(--accentd));
+  }
+  .body6 {
+    text-align: right;
+    border-bottom-style: solid;
+    border-bottom-color: var(--accent);
   }
   .grid-container {
     grid-template-columns: repeat(3, 1fr);
@@ -132,6 +231,9 @@ nav a:hover  {
           "image1 body1 body1"
           "body2 body2 image2"
           "image3 body3 body3"
+          "body4 body4 image4"
+          "image5 body5 body5"
+          "body6 body6 image6"
           "footer footer footer"
   }
 }
