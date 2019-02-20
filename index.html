@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tribute</title>
-    <link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic|Lato:300,900" rel="stylesheet"><!-- to load google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="css/mini_reset.css" rel="stylesheet"><!-- for browser reset -->
     <link href="css/normalize.css" rel="stylesheet"><!-- for cross-browser compatibility -->
     <link href="css/style.css" rel="stylesheet">
@@ -13,8 +14,8 @@
   <body>
     <nav>
       <ul>
-        <li><a href="#!">Previous</a></li>
-        <li><a href="#!">Next</a></li>
+        <li><a href="#!"><i class="far fa-arrow-alt-circle-left"></i> Previous <i class="far fa-arrow-alt-circle-left"></i></a></li>
+        <li><a href="#!"><i class="far fa-arrow-alt-circle-right"></i> Next <i class="far fa-arrow-alt-circle-right"></i></a></li>
       </ul>
     </nav>
     <div class="item expo">
@@ -26,13 +27,23 @@
       <i>MEET THE TEAM</i>
     </div>
     <div class="grid-container">
-      <div class="item image1">
+      <nav class="item tankl">
+        <a href="#tanks">Tanks</a>
+      </nav>
+      <nav class="item dpsl">
+        <a href="#dps">DPS</a>
+      </nav>
+      <nav class="item suppl">
+        <a href="#supports">Supports</a>
+      </nav>
+      <div class="item image1" id="tanks">
         <img src="assets/ball.png" alt="Image 1">
       </div>
       <div class="item body1">
         <p>
-          <h1>Weirdo</h1><br>
-          <h2>Main Tank</h2><br>
+          <h1>Weirdo</h1>
+          <strong>Main Tank</strong><br>
+          Quiet, yet reliable. Don't let the fact that this man never swaps off Hammond fool you, his Widowmaker is insane.
         </p>
       </div>
       <div class="item image2">
@@ -40,17 +51,19 @@
       </div>
       <div class="item body2">
         <p>
-          <h1>Potato!</h1><br>
-          <h2>Off Tank</h2><br>
+          <h1>Potato!</h1>
+          <strong>Off Tank</strong><br>
+          The team's resident Zarya one-trick. He's been on the team longer than anyone, and it shows. If anyone's going to be there when you need him, he is.
         </p>
       </div>
-      <div class="item image3">
+      <div class="item image3" id="dps">
         <img src="assets/sombra.png" alt="Image 3">
       </div>
       <div class="item body3">
         <p>
-          <h1>Honeybadger</h1><br>
-          <h2>Flex DPS</h2><br>
+          <h1>Honeybadger</h1>
+          <strong>Flex DPS</strong><br>
+          Team captain. Even though he's a Hanzo one-trick at heart, he will play whatever the team needs and play it well. Except Brigitte.
         </p>
       </div>
       <div class="item image4">
@@ -58,17 +71,19 @@
       </div>
       <div class="item body4">
         <p>
-          <h1>Brooks</h1><br>
-          <h2>Hitscan DPS</h2><br>
+          <h1>Brooks</h1>
+          <strong>Hitscan DPS</strong><br>
+          At 14, he's the youngest member of the team. You can always rely on him to pop off and land the shots he needs to. When he's not throwing, at least.
         </p>
       </div>
-      <div class="item image5">
+      <div class="item image5" id="supports">
         <img src="assets/ana.png" alt="Image 3">
       </div>
       <div class="item body5">
         <p>
-          <h1>Sylph</h1><br>
-          <h2>Main Support</h2><br>
+          <h1>Sylph</h1>
+          <strong>Main Support</strong><br>
+          The team's local veteran, sitting at thirty-[REDACTED]. If you find him in ladder, watch out for his pocket Symmetra pick.
         </p>
       </div>
       <div class="item image6">
@@ -76,8 +91,9 @@
       </div>
       <div class="item body6">
         <p>
-          <h1>Beam</h1><br>
-          <h2>Off Support</h2><br>
+          <h1>Beam</h1>
+          <strong>Off Support</strong><br>
+          The newest member of NEW. He's still got a lot left to prove, and prove he will.
         </p>
       </div>
       <div class="item footer">

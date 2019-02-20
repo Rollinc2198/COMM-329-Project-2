@@ -17,6 +17,9 @@ body {
   align-items: center;
   grid-template-columns: 1fr;
   grid-template-areas:
+        "tankl"
+        "dpsl"
+        "suppl"
         "image1"
         "body1"
         "image2"
@@ -70,7 +73,7 @@ nav a:hover  {
   -o-background-size: cover;
   background-size: cover;
   background-color: var(--primary);
-  font-size: 11vw;
+  font-size: 10.5vw;
   line-height: 23vw;
   text-align: center;
   color: var(--accentl);
@@ -82,7 +85,7 @@ nav a:hover  {
   padding-right: 0;
   width: 100%;
   height: auto;
-  font-family: "Lucida Console";
+  font-family: 'Anton', sans-serif;
 }
 .title img {
   width: 100%;
@@ -94,64 +97,113 @@ nav a:hover  {
 #banner2 {
   display: none;
 }
+.tankl {
+  grid-area: tankl;
+  text-align: center;
+}
+.dpsl {
+  grid-area: dpsl;
+  text-align: center;
+}
+.suppl {
+  grid-area: suppl;
+  text-align: center;
+}
+/* This solution sucks, but nothing else was working to keep the images from resizing. */
+.image1 img {
+  min-width: 427px;
+  min-height: 350px;
+}
 .image1 {
   background-image: linear-gradient(var(--accentd), var(--accentl), var(--background));
   display: flex;
   justify-content: center;
   grid-area: image1;
-  height: auto;
 }
 .body1 {
+  font-size: 25px;
+  height: 100%;
+  width: auto;
   grid-area: body1;
+}
+.image2 img {
+  min-width: 370px;
+  min-height: 350px;
 }
 .image2 {
   background-image: linear-gradient(var(--accentd), var(--accentl), var(--background));
   display: flex;
   justify-content: center;
   grid-area: image2;
-  max-height: 350px;
 }
 .body2 {
+  font-size: 25px;
+  height: 100%;
+  width: auto;
   grid-area: body2;
+}
+.image3 img {
+  min-width: 351px;
+  min-height: 350px;
 }
 .image3 {
   background-image: linear-gradient(var(--accentd), var(--accentl), var(--background));
   display: flex;
   justify-content: center;
   grid-area: image3;
-  height: 350px;
 }
 .body3 {
+  font-size: 25px;
+  height: 100%;
+  width: auto;
   grid-area: body3;
+}
+.image4 img {
+  min-width: 273px;
+  min-height: 350px;
 }
 .image4 {
   background-image: linear-gradient(var(--accentd), var(--accentl), var(--background));
   display: flex;
   justify-content: center;
   grid-area: image4;
-  height: 350px;
 }
 .body4 {
+  font-size: 25px;
+  height: 100%;
+  width: auto;
   grid-area: body4;
+}
+.image5 img {
+  min-width: 143px;
+  min-height: 350px;
 }
 .image5 {
   background-image: linear-gradient(var(--accentd), var(--accentl), var(--background));
   display: flex;
   justify-content: center;
   grid-area: image5;
-  height: 350px;
 }
 .body5 {
+  font-size: 25px;
+  height: 100%;
+  width: auto;
   grid-area: body5;
+}
+.image6 img {
+  min-width: 189px;
+  min-height: 350px;
 }
 .image6 {
   background-image: linear-gradient(var(--accentd), var(--accentl), var(--background));
   display: flex;
   justify-content: center;
   grid-area: image6;
-  height: 350px;
 }
 .body6 {
+  font-size: 25px;
+  height: 100%;
+  width: auto;
   grid-area: body6;
 }
 .footer {
@@ -160,9 +212,6 @@ nav a:hover  {
 }
 
 @media screen and (min-width: 556px) {
-  .title {
-    font-size: 8.1vw;
-  }
   #banner3 {
     display: none;
   }
@@ -171,9 +220,6 @@ nav a:hover  {
   }
 }
 @media screen and (min-width: 768px) {
-  .title {
-    font-size: 5.6vw;
-  }
   #banner2 {
     display: none;
   }
@@ -228,6 +274,7 @@ nav a:hover  {
   .grid-container {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
+          "tankl dpsl suppl"
           "image1 body1 body1"
           "body2 body2 image2"
           "image3 body3 body3"
